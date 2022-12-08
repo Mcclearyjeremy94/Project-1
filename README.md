@@ -1,52 +1,42 @@
-# Title that recommends an action
-## Subtitle describing the analysis 
+# Stroke data
+## Finding stroke data
 
-**Author**: 
+**Author**: Jeremy McCleary
 
 ### Business problem:
 
-Here is where you state the business problem you were trying to solve
+Predicting stroke data
 
 
 ### Data:
-Data can include source and high-level description (e.g. # obs)
+Predicting stroke data based on other health issues
 
 
 ## Methods
-- Data preparation steps with explanation and justification for choices
-- 
-
-## Results
-
-### Here are examples of how to embed images from your sub-folder
+- I decided when cleaning the data to remove the,'id','gender','ever_married','work_type','Residence_type', columns from the data seeing as they didnt specifically pertain to the actual target itself(stroke or not having a stroke).
+- Training, testing, and splitting the data and also making all columns with data that was having objects to numerical to make it easier for my model to run through the data.
 
 
-#### Visual 1 Title
-![sample image](project1_sample_image.png)
 
-> Sentence about visualization.
+#### Smoking status and stroke data
+/content/ax_smoking_status.png
 
-#### Visual 2 Title
+> This shows the stroke data for smokers, non smokers, people who formerly smoked, and unknown smokers
 
-## Model
+#### Glucose level and stroke data
+/content/ax_glucose_level.png
 
-Describe your final model
+>This shows the data for people who have a stroke with higher glucose levels
 
-Report the most important metrics
+## My final model would be the logistic regression model with PCA applied
+This model will help detect both true positives and true negatives. It has a 71% rate on detecting true positives and a 75% chance of detecting true negatives. Both are not perfect but it is a very well tuned model with the metrics on the confusion metrics report.
 
-Refer to the metrics to describe how well the model would solve the business problem
+## Recommendations: Get more patients data
 
-## Recommendations:
-
-More of your own text here
-
-
-## Limitations & Next Steps
-
-More of your own text here
+With more data it would help the results get better because it would be learning more and more data as it goes on further.
 
 
 ### For further information
 
 
-For any additional questions, please contact **email**
+For any additional questions, please contact **mcclearyjeremy94@gmail.com**
